@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Arts and Science College</title>
+    <!-- Importing a modern font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Reset & Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        /* Sticky Glassmorphism Navigation Bar */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 1px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Hover & Active Highlight Effects */
+        nav a:hover, nav a.active {
+            color: #ffffff;
+            background: #1e3a8a; /* Professional Blue Accent */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+        }
+
+        /* Sections Styling */
+        section {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 900px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            gap: 40px;
+        }
+
+        /* Alternate layout direction for visual variety */
+        section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section-content {
+            flex: 1;
+        }
+
+        section h1 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            color: #1e3a8a;
+            letter-spacing: -0.5px;
+        }
+
+        section p {
+            font-size: 1.05rem;
+            color: #718096;
+            line-height: 1.6;
+        }
+
+        /* Image Styling inside Section Content Links */
+        .image-card {
+            flex: 1;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: scale(1.02);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .image-card:hover img {
+            transform: scale(1.08);
+        }
+
+        /* Responsive layout for mobile screens */
+        @media (max-width: 768px) {
+            section, section:nth-child(even) {
+                flex-direction: column;
+                padding: 20px;
+                margin: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home" class="nav-link">HOME</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+        <a href="#service" class="nav-link">SERVICE</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="section-content">
+            <h1>Alpha Arts & Science College</h1>
+            <p>Welcome to the official portal of AASC Porur, Chennai. Fostering academic excellence, innovation, and holistic student development.</p>
+        </div>
+        <a href="https://www.collegebatch.com/4733-alpha-arts-and-science-college-campus-tour-chennai" target="_blank" class="image-card">
+            <img src="https://www.collegebatch.com/static/clg-gallery/alpha-arts-science-college-chennai-213301.webp" alt="Alpha Arts and Science College Campus">
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-content">
+            <h1>About Us</h1>
+            <p>Affiliated with the University of Madras and part of the Alpha Group of Institutions, we offer premier undergraduate and postgraduate programs in a vibrant environment.</p>
+        </div>
+        <a href="https://www.collegebatch.com/4733-alpha-arts-and-science-college-campus-tour-chennai" target="_blank" class="image-card">
+            <img src="https://www.collegebatch.com/static/clg-gallery/alpha-arts-science-college-chennai-213302.webp" alt="Alpha Arts and Science College Infrastructure">
+        </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our admissions or administrative office located in Porur, Chennai for course details, fee structures, and campus visits.</p>
+        </div>
+        <a href="https://www.collegebatch.com/4733-alpha-arts-and-science-college-campus-tour-chennai" target="_blank" class="image-card">
+            <img src="https://www.collegebatch.com/static/clg-gallery/alpha-arts-science-college-chennai-213303.webp" alt="Alpha Arts and Science College Facilities">
+        </a>
+    </section>
+
+    <!-- Service Section -->
+    <section id="service">
+        <div class="section-content">
+            <h1>Our Programs & Services</h1>
+            <p>Explore specialized degrees including BCA, B.Sc. (Computer Science, Biotechnology), B.Com, and robust placement and training cells.</p>
+        </div>
+        <a href="https://www.collegebatch.com/4733-alpha-arts-and-science-college-campus-tour-chennai" target="_blank" class="image-card">
+            <img src="https://www.collegebatch.com/static/clg-gallery/alpha-arts-science-college-chennai-213304.webp" alt="Alpha Arts and Science College Labs and Campus">
+        </a>
+    </section>
+
+    <!-- JavaScript to handle active link highlighting on scroll -->
+    <script>
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
